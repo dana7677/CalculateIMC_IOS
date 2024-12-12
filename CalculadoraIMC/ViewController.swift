@@ -6,19 +6,27 @@
 //
 
 import UIKit
+import SwiftUI
+import Foundation
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
     @IBOutlet weak var IMCrESULT: UILabel!
+    @IBOutlet weak var CalcularButton: UIButton!
     @IBOutlet weak var categoriaPesoLabel: UILabel!
     @IBOutlet weak var imgImc: UIImageView!
+    @IBOutlet weak var CategoriaDescription: UILabel!
     var height:Int=140
     var weight:Int=40
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        //CalcularButton.setTitle("Calculate",for: .normal)
+        CalcularButton.setTitle(String(localized: "Calculate"), for: .normal)
+        
         // Do any additional setup after loading the view.
     }
 
@@ -33,9 +41,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func SetWeight(_ sender: UIStepper) {
+        
         let newInt = Int(sender.value)
         weight=newInt
         weightLabel.text="\(newInt) Kg"
+        
     }
     
     @IBAction func Calculate(_ sender: Any) {
@@ -51,38 +61,39 @@ class ViewController: UIViewController {
         
         //Seteando el valor del texto e Imagen
         IMCrESULT.text="\(result) IMC"
+        let (resultMessageTxtChange,resultImgDirec, resultColor,resultText) = getWeightImgColorDescript(result)
+        CategoriaDescription.text=resultText
+        IMCrESULT.textColor=resultColor
+        categoriaPesoLabel.text=resultMessageTxtChange
+        imgImc.image = UIImage(named: resultImgDirec)
         
-        print(getWeightImg(result))
-        categoriaPesoLabel.text=getWeightImg(result)
-        imgImc.image = UIImage(named: getWeightImg(result))
         
     }
     
-    func getWeightImg(_ weightPass:Float)->String{
-        
+    func getWeightImgColorDescript(_ weightPass:Float)->(String,String, UIColor,String){
         
         switch weightPass{
             
             case ..<16.0:
-            return "Bajo Peso Severo"
+            return (String(localized: "Severe underweight"),"Severe underweight", UIColor.bajoPesoSevero,"Holaa")
             case ..<17.0:
-            return "Bajo Peso Intermedio"
+            return (String(localized: "Low Intermediate Weight"),"Low Intermediate Weight",UIColor.bajoPesoIntermedio,"Holiwi")
             case ..<18.5:
-            return "Bajo Peso"
+            return (String(localized: "Underweight"),"Underweight",UIColor.bajoPeso,"Holiwiii")
             case ..<25:
-            return "Normal"
+            return (String(localized: "Regular"),"Regular",UIColor.normal,"hOLA pATOS")
             case ..<30:
-            return "SobrePeso"
+            return (String(localized: "OverWeight"),"OverWeight",UIColor.sobrePeso,"hOLA Mandril")
             case ..<35:
-            return "Obesidad"
+            return (String(localized: "obesity"),"obesity",UIColor.obesidad,"mAMAPINGAS")
             case ..<40:
-            return "Obesidad Severa"
+            return (String(localized: "Severe Obesity"),"Severe Obesity",UIColor.obesidadSevera,"mAMADOR")
             case 40...:
-            return "Obesidad Morbida"
+            return (String(localized: "Morbid Obesity"),"Morbid Obesity",UIColor.obesidadMorbida,"mIRA quE MINI")
             default:
-            return "Error"
+            return ("Error","Error",UIColor.normal,"eRROR")
         }
-
     }
+    
 }
 

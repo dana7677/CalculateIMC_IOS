@@ -1,0 +1,114 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "2Qg-7U-4FW.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Description Category\"; ObjectID = \"2Qg-7U-4FW\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Description Category"
+          }
+        }
+      }
+    },
+    "dYb-5j-pnY.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"40 Kg\"; ObjectID = \"dYb-5j-pnY\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "40 Kg"
+          }
+        }
+      }
+    },
+    "eFe-MO-bX9.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"IMC\"; ObjectID = \"eFe-MO-bX9\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "IMC"
+          }
+        }
+      }
+    },
+    "EuH-bc-Go5.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Label\"; ObjectID = \"EuH-bc-Go5\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Label"
+          }
+        }
+      }
+    },
+    "GA8-HE-ywc.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Height\"; ObjectID = \"GA8-HE-ywc\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Height"
+          }
+        }
+      }
+    },
+    "gzS-UR-u5S.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Weight\"; ObjectID = \"gzS-UR-u5S\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Weight"
+          }
+        }
+      }
+    },
+    "qgE-kp-fqn.configuration.title" : {
+      "comment" : "Class = \"UIButton\"; configuration.title = \"Boton Calcular\"; ObjectID = \"qgE-kp-fqn\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Boton Calcular"
+          }
+        }
+      }
+    },
+    "qgE-kp-fqn.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"qgE-kp-fqn\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Button"
+          }
+        }
+      }
+    },
+    "wFo-ID-6Ul.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"140 cm\"; ObjectID = \"wFo-ID-6Ul\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "140 cm"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
